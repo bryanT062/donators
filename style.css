@@ -40,3 +40,14 @@ aside .p:hover{
      padding: 25px;
      font-size: 30px;
 }
+
+.active {
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    
+    flex-wrap: nowrap;
+  background-color: #dfe6e9;
+  transform: scale(1.02);
+  border: 2px solid #0984e3;
+}
