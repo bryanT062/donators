@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+     position: relative;
 }
 
 header{
@@ -14,11 +15,17 @@ header h1 {
     color: white;
 }
 #tout{
+  
+    width: 100%;
     display: flex;
     border: 2px solid black;
 }
 aside{
-    height: 600px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 750px;
     text-align: center;
      background-color: rgb(15, 121, 166);
 }
@@ -41,13 +48,34 @@ aside .p:hover{
      font-size: 30px;
 }
 
+.contener{
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    margin-top: 35px;
+    margin-left: 6%;
+    gap: 20px;
+}
+
 .active {
-    display:grid;
-    justify-content: center;
-    align-items: center;
-    
-    flex-wrap: nowrap;
+    border-radius: 15px;
+  margin: 15px;
+  padding: 5px;
+  width: 25%;
+  font-size: 20px;
+  text-align: center;
   background-color: #dfe6e9;
-  transform: scale(1.02);
   border: 2px solid #0984e3;
+}
+
+.active img {
+    border-radius: 50%;
+    margin-top: 30px;
+
+
+}
+.active .argent{
+    color: rgb(51, 182, 51);
+    font-size: 30px;
+   
 }
